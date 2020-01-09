@@ -13,5 +13,8 @@ public class CommandsLoader {
         plugin.getCommand("pv").setExecutor(new CommandPv());
         plugin.getCommand("shop").setExecutor(new CommandShop());
         plugin.getCommand("color").setExecutor(new CommandColor());
+        plugin.getCommand("pack").setExecutor(new CommandPack());
+        plugin.getCommand("fakejoin").setExecutor(new CommandFake());
+        plugin.getCommand("fakeleave").setExecutor(new CommandFake());
     }
 }

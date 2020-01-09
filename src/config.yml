@@ -1,6 +1,7 @@
 messages:
-  3D: "&7Texture pack &c3D&7 click sur le lien : &4&l"
-  2D: "&7Texture pack &c2D&7 click sur le lien : &4&l"
+  2D: "&7Texture pack &c2D&7 click sur le lien : &6http://www.mediafire.com/file/co4iup8b5ppn36i/OpalGta_Pack_2D.zip/file"
+  3D: "&7Texture pack &c3D&7 click sur le lien : &4&lMaintenance"
+  pack: "&eCommandes pour acceder au pack &5&l:&6 /2D &bet &6/3D"
   config-reload: "La configuration a bien été reload !"
   no-player: "Vous devez être un joueur pour executer cette commande !"
   no-perm: "&cVous n'avez pas la permission d'executer cette commande !"
@@ -8,9 +9,13 @@ messages:
   cooldownchat-set: "&cVous venez de mettre le cooldownchat à %secondes% secondes."
   cooldownchat: "&dAttends un peu avant de parler!"
   GTA-dk: "&c&lGTA &ene connait pas cette commande"
+  do-msg: "&c/msg <pseudo> <message>"
   nomap: "&cVous ne pouvez pas utiliser cette commande dans la map"
   clearchat: "&8&l>> &cLe chat a été clear par &b%player%"
   color: "&7&lLes couleurs: &00&11&22&33&44&55&66&77&88&99&aa&bb&cc&dd&ee&ff"
+  first-join: "&eBienvenue &b%player%&e sur notre serveur &3&lGTA"
+  fake-join:  "&7[&a+&7] &a%player%"
+  fake-leave: "&7[&c-&7] &c%player%"
   help0: "&7/opalcraft help"
   help1: "&7/opalcraft help : Permet de voir la liste des commandes"
   help2: "&7/opalcraft reload : Permet de reload la config"
@@ -22,6 +27,7 @@ messages:
 
 cooldownchat:
   time: 3
+
 mobs:
   zombie-name: "§bPolice"
   skeleton-name: "§cSwat"
@@ -32,3 +38,5 @@ permissions:
   cooldownchat-bypass: "opalcraft.cooldownchat.bypass"
   clearchat: "opalcraft.clearchat.use"
   chestinteract: "opalcraft.chest.interact"
+  fakejoin: "opalcraft.fake.join"
+  fakeleave: "opalcraft.fake.leave"

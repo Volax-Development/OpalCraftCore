@@ -12,11 +12,13 @@ public class EventsLoader {
         pm.registerEvents(new AsyncPlayerChat(), instance);
         pm.registerEvents(new EntitySpawn(), instance);
         pm.registerEvents(new PlayerQuit(), instance);
+        pm.registerEvents(new PlayerJoin(), instance);
         pm.registerEvents(new EntityDeath(), instance);
         pm.registerEvents(new PlayerVehicleEnter(), instance);
         pm.registerEvents(new PlayerDrop(), instance);
         pm.registerEvents(new PlayerCraft(), instance);
         pm.registerEvents(new PlayerInteract(), instance);
         pm.registerEvents(new PlayerBreak(), instance);
+        pm.registerEvents(new PlayerCommandPreprocess(), instance);
     }
 }

@@ -22,3 +22,10 @@ commands:
   color:
     aliases: [couleur, chatcouleur, infocouleur, chatcolor, infocolor]
     description: Color commande
+  pack:
+    aliases: [texture, texturepack]
+    description: Command Pack
+  fakeleave:
+    description: Command FakeLeave
+  fakejoin:
+    description: Command FakeJoin

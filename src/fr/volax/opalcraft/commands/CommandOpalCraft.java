@@ -35,7 +35,7 @@ public class CommandOpalCraft implements CommandExecutor {
                 for(int x = 0; x < 100; x++){
                     Bukkit.broadcastMessage("");
                 }
-                Bukkit.broadcastMessage(Config.getString("messages.clear").replaceAll("%player%", player.getName()));
+                Bukkit.broadcastMessage(Config.getString("messages.clearchat").replaceAll("%player%", player.getName()));
             }else{
                 player.sendMessage(Config.getString("messages.help0"));
                 return false;
