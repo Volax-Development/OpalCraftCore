@@ -1,6 +1,6 @@
 name: OpalCraftCore
 main: fr.volax.opalcraft.OpalCraftCorePlugin
-version: 1.0.1
+version: 1.0.2
 description: OpalCraftCore
 author: Volax
 commands:
@@ -29,3 +29,5 @@ commands:
     description: Command FakeLeave
   fakejoin:
     description: Command FakeJoin
+  largage:
+    description: Command Largage

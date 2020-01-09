@@ -24,6 +24,9 @@ messages:
   impossible-interact-block: "&cImpossible d'interagir avec ce bloc"
   impossible-interact-item: "&cInterdit"
   impossible-interact-button: "&8&l>> &eNope ;)"
+  help-largage0: "&7---------------"
+  help-largage1: "&7>>&b/largage loc"
+  help-largage2: "&7>>&b/largage temp"
 
 cooldownchat:
   time: 3
@@ -40,3 +43,6 @@ permissions:
   chestinteract: "opalcraft.chest.interact"
   fakejoin: "opalcraft.fake.join"
   fakeleave: "opalcraft.fake.leave"
+  largage-use: "opalcraft.largage.use"
+  largage-loc: "opalcraft.largage.loc"
+  largage-temp: "opalcraft.largage.temp"

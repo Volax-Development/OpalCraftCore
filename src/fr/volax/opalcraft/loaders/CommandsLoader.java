@@ -16,5 +16,6 @@ public class CommandsLoader {
         plugin.getCommand("pack").setExecutor(new CommandPack());
         plugin.getCommand("fakejoin").setExecutor(new CommandFake());
         plugin.getCommand("fakeleave").setExecutor(new CommandFake());
+        plugin.getCommand("largage").setExecutor(new CommandLargage());
     }
 }
