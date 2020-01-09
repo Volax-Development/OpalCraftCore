@@ -1,0 +1,24 @@
+name: OpalCraftCore
+main: fr.volax.opalcraft.OpalCraftCorePlugin
+version: 1.0
+description: OpalCraftCore
+author: Volax
+commands:
+  2D:
+    description: Pack de texture 2D
+  3D:
+    description: Pack de texture 3D
+  opalcraft:
+    description: OpalCraft main command
+  regles:
+    description: Commande règle
+  topkills:
+    aliases: [topkill]
+    description: Command topkills
+  pv:
+    description: Command pv
+  shop:
+    description: Command shop
+  color:
+    aliases: [couleur, chatcouleur, infocouleur, chatcolor, infocolor]
+    description: Color commande
