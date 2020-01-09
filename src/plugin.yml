@@ -1,6 +1,6 @@
 name: OpalCraftCore
 main: fr.volax.opalcraft.OpalCraftCorePlugin
-version: 1.0
+version: 1.0.1
 description: OpalCraftCore
 author: Volax
 commands:
