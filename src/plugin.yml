@@ -29,5 +29,3 @@ commands:
     description: Command FakeLeave
   fakejoin:
     description: Command FakeJoin
-  largage:
-    description: Command Largage
