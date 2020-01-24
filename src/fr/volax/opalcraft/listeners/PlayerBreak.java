@@ -10,13 +10,11 @@ import org.bukkit.event.block.BlockBreakEvent;
 
 public class PlayerBreak implements Listener {
     @EventHandler
-    public void BreakPlayer(BlockBreakEvent event){
+    public void breakPlayer(BlockBreakEvent event){
         Block item = event.getBlock();
         Player player = event.getPlayer();
-        if(!player.hasPermission(Config.getString("permissions.chestinteract"))){
-            if(item.getType() == Material.CHEST){
+        if(!player.hasPermission(Config.getString("permissions.chestinteract")) && item.getType() == Material.CHEST){
                 event.setCancelled(true);
-            }
         }
     }
 }

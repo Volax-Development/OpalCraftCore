@@ -1,8 +1,7 @@
 package fr.volax.opalcraft.utils;
 
-import fr.volax.opalcraft.OpalCraftCorePlugin;
-import fr.volax.opalcraft.loaders.CommandsLoader;
-import fr.volax.opalcraft.loaders.EventsLoader;
+import fr.volax.opalcraft.*;
+import fr.volax.opalcraft.loaders.*;
 
 import java.util.HashMap;
 import java.util.UUID;

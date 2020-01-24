@@ -1,7 +1,6 @@
 package fr.volax.opalcraft.listeners;
 
 import fr.volax.opalcraft.utils.Config;
-import fr.volax.opalcraft.utils.Messages;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -12,7 +11,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class PlayerInteract implements Listener {
     @EventHandler
-    public void InteractPlayer(PlayerInteractEvent event){
+    public void interactPlayer(PlayerInteractEvent event){
         Player player = event.getPlayer();
         Action action = event.getAction();
         ItemStack item = event.getItem();

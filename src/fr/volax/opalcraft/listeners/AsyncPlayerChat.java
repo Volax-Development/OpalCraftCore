@@ -1,18 +1,15 @@
 package fr.volax.opalcraft.listeners;
 
-import fr.volax.opalcraft.OpalCraftCorePlugin;
-import fr.volax.opalcraft.utils.Config;
-import fr.volax.opalcraft.utils.Utils;
+import fr.volax.opalcraft.utils.*;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
+import org.bukkit.event.*;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import java.util.UUID;
 
 public class AsyncPlayerChat implements Listener {
     @EventHandler
-    public void ASP(AsyncPlayerChatEvent event){
+    public void playerChatAsync(AsyncPlayerChatEvent event){
         Player player = event.getPlayer();
         if(player.hasPermission(Config.getString("permissions.cooldownchat-bypass"))){ return; }
         UUID uuid = player.getUniqueId();

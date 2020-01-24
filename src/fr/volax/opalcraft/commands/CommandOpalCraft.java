@@ -40,16 +40,14 @@ public class CommandOpalCraft implements CommandExecutor {
                 player.sendMessage(Config.getString("messages.help0"));
                 return false;
             }
-        }else if(args.length == 2){
-            if(args[0].equalsIgnoreCase("cooldownchat")){
-                if(!Messages.noperm(player, Config.getString("permissions.cooldownchat"))) return false;
-                if(Utils.isInt(args[1])){
-                    Config.set("cooldownchat.time", args[0]);
-                    player.sendMessage(Config.getString("messages.cooldownchat-set").replaceAll("%secondes%", args[1]));
-                }else{
-                    player.sendMessage(Config.getString("messages.pas-chiffre").replaceAll("%arg1%", args[1]));
-                    return false;
-                }
+        }else if(args.length == 2 && args[0].equalsIgnoreCase("cooldownchat")){
+            if(!Messages.noperm(player, Config.getString("permissions.cooldownchat"))) return false;
+            if(Utils.isInt(args[1])){
+                Config.set("cooldownchat.time", args[0]);
+                player.sendMessage(Config.getString("messages.cooldownchat-set").replaceAll("%secondes%", args[1]));
+            }else{
+                player.sendMessage(Config.getString("messages.pas-chiffre").replaceAll("%arg1%", args[1]));
+                return false;
             }
         }
         return false;

@@ -1,13 +1,8 @@
 package fr.volax.opalcraft.commands;
 
-import fr.volax.opalcraft.OpalCraftCorePlugin;
-import fr.volax.opalcraft.utils.Config;
-import fr.volax.opalcraft.utils.Messages;
-import fr.volax.opalcraft.utils.Utils;
+import fr.volax.opalcraft.utils.*;
+import org.bukkit.command.*;
 import org.bukkit.World;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class CommandPv implements CommandExecutor {

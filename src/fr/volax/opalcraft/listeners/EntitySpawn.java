@@ -13,7 +13,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class EntitySpawn implements Listener {
     @EventHandler
-    public void Spawnentity(EntitySpawnEvent event){
+    public void spawnEntity(EntitySpawnEvent event){
         Entity entity = event.getEntity();
         World world = entity.getWorld();
         if(entity instanceof Skeleton) {

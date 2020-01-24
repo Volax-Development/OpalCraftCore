@@ -1,6 +1,5 @@
 package fr.volax.opalcraft.utils;
 
-import fr.volax.opalcraft.OpalCraftCorePlugin;
 import org.bukkit.Bukkit;
 
 public class Security {

@@ -6,7 +6,7 @@ import org.bukkit.event.inventory.CraftItemEvent;
 
 public class PlayerCraft implements Listener {
     @EventHandler
-    public void CraftPlayer(CraftItemEvent event){
+    public void craftPlayer(CraftItemEvent event){
         event.setCancelled(true);
     }
 }
