@@ -1,6 +1,5 @@
 package fr.volax.opalcraft.listeners;
 
-import fr.volax.opalcraft.OpalCraftCorePlugin;
 import fr.volax.opalcraft.utils.Utils;
 import net.minecraft.server.v1_8_R3.PacketPlayInClientCommand;
 import org.bukkit.Bukkit;

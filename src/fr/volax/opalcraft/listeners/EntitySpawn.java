@@ -16,24 +16,21 @@ public class EntitySpawn implements Listener {
     public void spawnEntity(EntitySpawnEvent event){
         Entity entity = event.getEntity();
         World world = entity.getWorld();
+        if(!world.getName().equals("greenfield")) return;
         if(entity instanceof Skeleton) {
-            if (world.getName().equals("greenfield")) {
-                entity.setCustomName(Config.getString("mobs.skeleton-name"));
-                ((Skeleton) entity).getEquipment().clear();
-                ((Skeleton) entity).getEquipment().setChestplate(new ItemStack(Material.IRON_CHESTPLATE, 1));
-                ((Skeleton) entity).getEquipment().setLeggings(new ItemStack(Material.IRON_LEGGINGS, 1));
-                ((Skeleton) entity).getEquipment().setBoots(new ItemStack(Material.IRON_BOOTS, 1));
-                return;
-            }
+            entity.setCustomName(Config.getString("mobs.skeleton-name"));
+            ((Skeleton) entity).getEquipment().clear();
+            ((Skeleton) entity).getEquipment().setChestplate(new ItemStack(Material.IRON_CHESTPLATE, 1));
+            ((Skeleton) entity).getEquipment().setLeggings(new ItemStack(Material.IRON_LEGGINGS, 1));
+            ((Skeleton) entity).getEquipment().setBoots(new ItemStack(Material.IRON_BOOTS, 1));
+            return;
         }
         if(entity instanceof Zombie) {
-            if (world.getName().equals("greenfield")) {
-                entity.setCustomName(Config.getString("mobs.zombie-name"));
-                ((Zombie) entity).getEquipment().clear();
-                ((Zombie) entity).getEquipment().setChestplate(new ItemStack(Material.CHAINMAIL_CHESTPLATE, 1));
-                ((Zombie) entity).getEquipment().setLeggings(new ItemStack(Material.CHAINMAIL_LEGGINGS, 1));
-                ((Zombie) entity).getEquipment().setBoots(new ItemStack(Material.CHAINMAIL_BOOTS, 1));
-            }
+            entity.setCustomName(Config.getString("mobs.zombie-name"));
+            ((Zombie) entity).getEquipment().clear();
+            ((Zombie) entity).getEquipment().setChestplate(new ItemStack(Material.CHAINMAIL_CHESTPLATE, 1));
+            ((Zombie) entity).getEquipment().setLeggings(new ItemStack(Material.CHAINMAIL_LEGGINGS, 1));
+            ((Zombie) entity).getEquipment().setBoots(new ItemStack(Material.CHAINMAIL_BOOTS, 1));
         }
     }
 }

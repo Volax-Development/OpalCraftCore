@@ -11,7 +11,7 @@ public class PlayerVehicleEnter implements Listener {
     public void ballFiring(VehicleEnterEvent e){
         Player p = (Player) e.getEntered();
         if (!(p.getWorld().getName().equals("spawn"))) return;
-        if (!(e.getVehicle().getType() == EntityType.MINECART)) return;
+        if (e.getVehicle().getType() != EntityType.MINECART) return;
         e.setCancelled(true);
         p.sendMessage("§b§lT");
     }
