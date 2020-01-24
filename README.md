@@ -6,11 +6,11 @@
 
 **Permissions**
 ----------------------------
-- "opalcraft.command.use" Pour utiliser la commande /opalcraft
-- "opalcraft.cooldownchat.use" Pour définir le cooldown du chat ( /opalcraft cooldownchat )
+- "opalcraft.command.use" Pour utiliser la commande
+- "opalcraft.cooldownchat.use" Pour définir le cooldown du chat
 - "opalcraft.cooldownchat.bypass" Pour bypass le cooldown du chat
-- "opalcraft.clearchat.use" Pour clear le chat ( /opalcraft clearchat )
-- "opalcraft.fake.join" Pour envoyer un faux message de join message ( /fakejoin )
-- "opalcraft.fake.leave" Pour envoyer un faux message de quit message ( /fakequit )
+- "opalcraft.clearchat.use" Pour clear le chat
+- "opalcraft.fake.join" Pour envoyer un faux message de join message
+- "opalcraft.fake.leave" Pour envoyer un faux message de quit message
 
 ***© Volax.***
