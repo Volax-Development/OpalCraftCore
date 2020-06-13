@@ -10,6 +10,7 @@ import java.util.UUID;
 
 public class Utils {
     public static OpalCraftCorePlugin instance;
+    public Security security = new Security();
     public static HashMap<UUID, Long> cooldown = new HashMap<>();
     public static OpalCraftCorePlugin getInstance() { return instance; }
 
@@ -23,10 +24,9 @@ public class Utils {
     }
 
     public static void loadMain(OpalCraftCorePlugin instance){
-        Security Security = new Security();
         Utils.instance = instance;
         instance.saveDefaultConfig();
-        Security.verif();
+        security.verif();
 
         EvtLoader.load(instance);
         CmdLoader.load(instance);
